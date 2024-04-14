@@ -90,8 +90,10 @@ nav a {
 .project-card {
     background-color: #f4f4f4;
     border-radius: 8px;
-    padding: 1.5rem;
+    padding: 20px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s ease;
 }
 
 .project-card img {
@@ -152,13 +154,6 @@ nav {
     gap: 20px;
 }
 
-.project-card {
-    background-color: #f4f4f4;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 .project-card img {
     max-width: 100%;
     border-radius: 8px;
@@ -166,4 +161,9 @@ nav {
 
 .project-card h3 {
     margin-top: 1rem;
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* Move card up slightly on hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
 }
