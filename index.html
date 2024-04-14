@@ -5,29 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="style.css">
+    <script src="func.js"></script>
 </head>
 <body>
     <nav>
         <div class="logo">BISON SHOWCASE</div>
         <div class="nav-items">
-            <a href="index.html">Home</a>
+            <a href="/">Home</a>
             <a href="projects.html">View Projects</a>
-            <a href="submit.html">Submit Projects</a>
-            <a href="login.html">Signin/Login</a>
+            <a href="/">Login</a>
         </div>
     </nav>
-    <br>
+
+    <!-- Sign-in form -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Sign In</h2>
+            <form action="#" method="POST">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <div class="form-links">
+                    <a href="#" id="signup-link">Sign Up</a>
+                    <a href="#" id="forgot-link">Forgot Password?</a>
+                </div>
+                <input type="submit" value="Sign In" class="btn">
+            </form>
+        </div>
+    </div>
     <section class="hero">
-        <div class="hero-containter">
-            <div class="column-left">
-                <h2>Welcome to Bison Showcase!</h2>
-                <br>
-                <p>Here is where you can see the different projects and portfolios made by Howard students. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime sunt, voluptatem pariatur placeat obcaecati amet voluptates unde quibusdam quo. Voluptatem maxime ad sed consequatur neque vel explicabo sequi itaque odio. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit facilis nam rerum sapiente voluptas? Quisquam maxime suscipit quas asperiores cum at adipisci laboriosam ut incidunt, unde dicta necessitatibus molestias quidem.</p>
-            </div>
-            <div class="column-right">
-                <img src="Howard_bison_logo.png" alt="Howard Logo" class="hero-image"></img>
-            </div>
-        </div> 
+        <div class="hero-container">
+            <h1>Welcome to Bison Showcase!</h1>
+            <p>Explore amazing projects created by Howard students.</p>
+            <a href="projects.html" class="btn">View Projects</a>
+        </div>
     </section>
+    <section id="projects" class="projects">
+        <h2>Recent Projects</h2>
+        <div class="project-grid">
+            <div class="project-card" onclick="window.location='#';">
+                <img src="path/to/project1.jpg" alt="Project 1">
+                <h3>Project 1 Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque libero vitae felis blandit, nec bibendum eros efficitur.</p>
+            </div>
+            <div class="project-card" onclick="window.location='#';">
+                <img src="path/to/project2.jpg" alt="Project 2">
+                <h3>Project 2 Title</h3>
+                <p>Integer feugiat lorem id ante aliquam, ut condimentum ligula lobortis. Mauris nec justo nec lorem tincidunt fringilla.</p>
+            </div>
+            <div class="project-card" onclick="window.location='#';">
+                <img src="path/to/project3.jpg" alt="Project 3">
+                <h3>Project 3 Title</h3>
+                <p>Vestibulum mattis velit nec ante fringilla, sed tincidunt metus ultrices. Nam sed lectus ut odio ultrices imperdiet.</p>
+            </div>
+            <!-- Add more project cards as needed -->
+        </div>
+    </section>
+      
 </body>
 </html>
