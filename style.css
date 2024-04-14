@@ -177,12 +177,6 @@ body {
 }
 
 /* Navigation styles */
-nav {
-    background-color: navy;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-}
 
 .logo {
     font-size: 1.5rem;
