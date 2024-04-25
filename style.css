@@ -289,8 +289,7 @@ input[type="password"] {
 }
 
 
-input[type="submit"],
-input[type="reset"] {
+input[type="submit"] {
     background-color: #043464;
     color: #fff;
     border: none;
@@ -301,7 +300,6 @@ input[type="reset"] {
     transition: background-color 0.3s ease;
 }
 
-input[type="submit"]:hover,
-input[type="reset"]:hover {
+input[type="submit"]:hover {
     background-color: #001f3f;
 }
