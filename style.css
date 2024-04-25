@@ -259,3 +259,49 @@ body {
 #file-list a:hover {
     background-color: #c9c9c9; /* Light gray background on hover */
 }
+
+/* LOGIN PAGE */
+form {
+    margin: 0;
+    padding: 0;
+}
+
+
+.input {
+    margin-bottom: 20px;
+}
+
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+input[type="text"],
+input[type="password"] {
+    width: 30%;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #043464;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #001f3f;
+}
