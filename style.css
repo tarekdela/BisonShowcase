@@ -262,8 +262,10 @@ body {
 
 /* LOGIN PAGE */
 form {
-    margin: 0;
-    padding: 0;
+    border: 3px solid #f1f1f1;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 
@@ -279,17 +281,7 @@ label {
 }
 
 
-input[type="text"],
-input[type="password"] {
-    width: 30%;
-    padding: 7px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
-}
-
-
-input[type="submit"] {
+input[type="submit"]{
     background-color: #043464;
     color: #fff;
     border: none;
@@ -324,19 +316,20 @@ input[type="submit"]:hover {
     margin-bottom: 1.5rem;
 }
 
-
 /* SUBMIT PAGE */
-input[type="text"],input[type="password"],
+input[type="text"],
+input[type="password"], 
 textarea {
-    width: 30%;
-    padding:7px;
-    margin-bottom: 10px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 input[type="file"] {
-    width: 30%;
+    width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -353,8 +346,51 @@ button[type="submit"] {
     font-weight: bold;
     transition: background-color 0.3s ease;
     cursor: pointer;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
 }
 
 button[type="submit"]:hover {
     background-color: #001f3f;
+}
+
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+
+.container {
+    padding: 16px;
+}
+
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
 }
