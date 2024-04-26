@@ -318,3 +318,8 @@ input[type="submit"]:hover {
 .submit-btn:hover {
     background-color: #001f3f;
 }
+
+.projects h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
