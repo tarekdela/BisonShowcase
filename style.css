@@ -323,3 +323,38 @@ input[type="submit"]:hover {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
 }
+
+
+/* SUBMIT PAGE */
+input[type="text"],input[type="password"],
+textarea {
+    width: 30%;
+    padding:7px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="file"] {
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background-color: #043464;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #001f3f;
+}

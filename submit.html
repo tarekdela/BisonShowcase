@@ -16,3 +16,16 @@
             <a href="login.html">Login</a>
         </div>
     </nav>
+
+    <form action="process_upload.php" method="post" enctype="multipart/form-data">
+        <label for="projectTitle">Project Title:</label>
+        <input type="text" id="projectTitle" name="projectTitle" required>
+    
+        <label for="projectDescription">Project Description:</label>
+        <textarea id="projectDescription" name="projectDescription" rows="4" required></textarea>
+    
+        <label for="projectFiles">Upload Files:</label>
+        <input type="file" id="projectFiles" name="projectFiles[]" multiple accept=".pdf, .docx, .jpg, .png" required>
+    
+        <button type="submit">Submit</button>
+    </form>
